@@ -1,84 +1,92 @@
 # 🛰️ OrbitXAI
 
-### Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis
+## Interactive Vision-Language Assistant for Multimodal Remote Sensing Image Analysis
 
-> **OrbitXAI** is an Earth Observation Intelligence platform that enables users to analyze satellite imagery using natural-language queries, temporal comparison, multispectral/multisensor analysis, AI-assisted interpretation, evidence, and explainable analysis workflows.
+> **OrbitXAI** is an Earth Observation Intelligence platform designed to allow users to interact with satellite imagery using natural-language queries, temporal comparison, multisensor analysis, AI-assisted interpretation, visual evidence, and explainable analysis workflows.
 
 ---
 
-## 🌍 Overview
+# 🌍 Overview
 
-Earth observation satellites continuously generate massive amounts of remote sensing data. However, extracting meaningful information from satellite imagery often requires specialized knowledge of image processing, remote sensing, GIS, and machine learning.
+Modern Earth-observation satellites generate enormous volumes of remote-sensing imagery. Extracting useful information from this data traditionally requires knowledge of GIS, remote sensing, image processing, and machine learning.
 
-**OrbitXAI** aims to simplify this process by providing an interactive **Vision-Language Intelligence Platform** where users can upload satellite imagery and ask questions using natural language.
+**OrbitXAI** aims to simplify satellite-image analysis by combining:
 
-The platform is designed to support:
+- 🛰️ Earth Observation
+- 🤖 Artificial Intelligence
+- 👁️ Computer Vision
+- 🧠 Vision-Language Models
+- 🗺️ Geospatial Intelligence
+- ⏳ Temporal Analysis
+- 📡 Multisensor Analysis
+- 🔎 Evidence-Based AI
+- 📊 Explainable AI
 
-- 🛰️ Satellite Image Analysis
-- 🖼️ Single Image Analysis
-- ⏳ Temporal Image Comparison
-- 📡 Optical & SAR Analysis
-- 🤖 Vision-Language AI
-- 🔎 Visual Question Answering
-- 🗺️ Geospatial Analysis
-- 🎯 Object / Region Grounding
-- 📊 Change Detection
-- 🧠 AI-Assisted Interpretation
-- 📚 Evidence-Based Results
-- 🔗 Explainable Analysis Trace
+The platform is designed around a simple idea:
+
+> **Ask questions about satellite imagery in natural language and receive structured, evidence-based geospatial intelligence.**
 
 ---
 
 # 🎯 Problem Statement
 
-Remote sensing datasets contain valuable information about:
+Satellite imagery contains valuable information about:
 
 - Urban expansion
-- Agricultural development
-- Deforestation
+- Agriculture
+- Forests
 - Water bodies
 - Infrastructure
 - Natural disasters
 - Land-use and land-cover changes
 - Environmental changes
 
-However, traditional satellite-image analysis often requires users to work with complex GIS and remote-sensing software.
+However, traditional satellite-image analysis can be complex and time-consuming.
 
-Most existing systems also present AI results as simple predictions without clearly showing:
+Users often need specialized tools and knowledge to:
 
-> **What did the AI observe?**
+- Load satellite imagery
+- Understand different sensors
+- Compare temporal imagery
+- Identify objects
+- Detect changes
+- Interpret geospatial information
+- Understand AI predictions
 
-> **Where did it observe it?**
+Many AI systems also provide a final answer without clearly explaining:
 
-> **Why did it reach that conclusion?**
+> **What was detected?**
+
+> **Where was it detected?**
 
 > **What evidence supports the result?**
 
-OrbitXAI addresses this gap by combining **multimodal satellite imagery + natural-language interaction + visual evidence + explainability**.
+> **How was the result generated?**
+
+OrbitXAI is designed to address these challenges through an interactive multimodal Earth Observation intelligence workflow.
 
 ---
 
-# 💡 Our Solution
+# 💡 Proposed Solution
 
-OrbitXAI provides a unified workspace for interacting with satellite imagery.
-
-Users can:
+OrbitXAI provides a unified analysis workspace where users can:
 
 1. Upload satellite imagery.
 2. Preview and inspect imagery.
 3. Compare images from different time periods.
 4. Switch between Optical and SAR imagery.
-5. Ask natural-language questions.
-6. Run AI-powered analysis.
-7. Visualize detected regions and evidence.
-8. Inspect the reasoning/analysis trace.
-9. Receive structured and explainable results.
+5. Ask questions using natural language.
+6. Run AI-assisted analysis.
+7. Identify relevant regions.
+8. View supporting evidence.
+9. Inspect the analysis process.
+10. Receive structured and explainable results.
 
 ---
 
 # 🚀 Key Features
 
-## 1. 🖼️ Single Image Analysis
+## 🖼️ 1. Single Image Analysis
 
 Analyze an individual satellite image.
 
@@ -88,22 +96,20 @@ Analyze an individual satellite image.
 - Image preview
 - Image removal
 - Zoom controls
-- Coordinate overlay UI
 - Grid overlay
+- Coordinate display UI
 - Fullscreen viewer UI
-- Image metadata display foundation
+- Image metadata foundation
 
 ---
 
-## 2. ⏳ Temporal Analysis
+# ⏳ 2. Temporal Analysis
 
-Compare satellite imagery captured at different points in time.
-
-### Supported workflow
+OrbitXAI supports a temporal analysis workflow using two images:
 
 ```text
-T1 — Earlier Image
-        ↓
+T1 — Earlier
+      ↓
 Temporal Analysis
-        ↓
-T2 — Later Image
+      ↓
+T2 — Later
