@@ -113,3 +113,31 @@ T1 — Earlier
 Temporal Analysis
       ↓
 T2 — Later
+```
+
+
+# 🚀 How to Execute OrbitXAI
+
+Follow the steps below to run OrbitXAI locally.
+
+---
+
+## 📋 Prerequisites
+
+Make sure the following software is installed:
+
+- **Git**
+- **Node.js 18+**
+- **npm**
+- **Python 3.11**
+- **Anaconda / Miniconda**
+- **VS Code** (recommended)
+
+Check installations:
+
+```powershell
+git --version
+node --version
+npm --version
+python --version
+conda --version
