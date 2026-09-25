@@ -144,154 +144,225 @@ conda --version
 ```
 
 
-1️⃣ Clone the Repository
+# OrbitXAI
+
+## 1️⃣ Clone the Repository
 
 Open PowerShell or Command Prompt:
 
+```
 git clone https://github.com/Sushilcoder/orbitXAI.git
+```
 
 Move into the project:
 
+```
 cd orbitXAI
+```
 
 The project structure should look approximately like:
 
+```
 orbitXAI/
 │
 ├── frontend/
 ├── backend/
 ├── README.md
 └── ...
-2️⃣ Run the Frontend
+```
+
+## 2️⃣ Run the Frontend
 
 Open a terminal and navigate to the frontend:
 
+```
 cd frontend
+```
 
 Install dependencies:
 
+```
 npm install
+```
 
 Start the Next.js development server:
 
+```
 npm run dev
+```
 
 You should see something similar to:
 
+```
 ▲ Next.js
 - Local: http://localhost:3000
+```
 
 Open your browser:
 
+```
 http://localhost:3000
-3️⃣ Run the Backend
+```
+
+## 3️⃣ Run the Backend
 
 Open a second terminal.
 
 Navigate to the backend:
 
+```
 cd orbitXAI\backend
+```
 
 Create/activate the Conda environment:
 
+```
 conda activate orbitxai
+```
 
 If the environment does not exist, create it:
 
+```
 conda create -n orbitxai python=3.11 -y
+```
 
 Then activate:
 
+```
 conda activate orbitxai
+```
 
 Verify Python:
 
+```
 python --version
+```
 
 Expected:
 
+```
 Python 3.11.x
-4️⃣ Install Backend Dependencies
+```
+
+## 4️⃣ Install Backend Dependencies
 
 From the backend directory:
 
+```
 python -m pip install --upgrade pip
+```
 
 Install the current backend dependencies:
 
+```
 python -m pip install fastapi "uvicorn[standard]" python-multipart pydantic-settings
+```
 
 Verify:
 
+```
 python -c "import fastapi, uvicorn, pydantic_settings; print('OrbitXAI backend dependencies OK')"
+```
 
 Expected:
 
+```
 OrbitXAI backend dependencies OK
-5️⃣ Start the FastAPI Backend
+```
+
+## 5️⃣ Start the FastAPI Backend
 
 From:
 
+```
 orbitXAI/backend
+```
 
 run:
 
+```
 uvicorn app.main:app --reload
+```
 
 Expected:
 
+```
 Uvicorn running on http://127.0.0.1:8000
-6️⃣ Verify the Backend
+```
+
+## 6️⃣ Verify the Backend
 
 Open:
 
-API
-http://localhost:8000
+```
+API http://localhost:8000
+```
 
 Expected response:
 
+```
 {
   "message": "OrbitXAI API",
   "status": "online",
   "version": "0.1.0"
 }
-Health Check
+```
+
+### Health Check
 
 Open:
 
+```
 http://localhost:8000/health
+```
 
 Expected:
 
+```
 {
   "status": "ok",
   "service": "OrbitXAI API",
   "version": "0.1.0"
 }
-API Documentation
+```
+
+### API Documentation
 
 Open:
 
+```
 http://localhost:8000/docs
+```
 
 This opens the interactive Swagger UI.
 
-7️⃣ Run Frontend + Backend Together
+## 7️⃣ Run Frontend + Backend Together
 
 OrbitXAI requires two running servers during development.
 
-Terminal 1 — Frontend
+**Terminal 1 — Frontend**
+
+```
 cd orbitXAI\frontend
 npm run dev
+```
 
 Frontend:
 
+```
 http://localhost:3000
-Terminal 2 — Backend
+```
+
+**Terminal 2 — Backend**
+
+```
 cd orbitXAI\backend
 conda activate orbitxai
 uvicorn app.main:app --reload
+```
 
 Backend:
 
+```
 http://localhost:8000
+```
