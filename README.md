@@ -146,7 +146,7 @@ conda --version
 
 # OrbitXAI
 
-## 1️⃣ Clone the Repository
+## Clone the Repository
 
 Open PowerShell or Command Prompt:
 
@@ -171,7 +171,7 @@ orbitXAI/
 └── ...
 ```
 
-## 2️⃣ Run the Frontend
+##  Run the Frontend
 
 Open a terminal and navigate to the frontend:
 
@@ -204,7 +204,7 @@ Open your browser:
 http://localhost:3000
 ```
 
-## 3️⃣ Run the Backend
+##  Run the Backend
 
 Open a second terminal.
 
@@ -244,7 +244,7 @@ Expected:
 Python 3.11.x
 ```
 
-## 4️⃣ Install Backend Dependencies
+##  Install Backend Dependencies
 
 From the backend directory:
 
@@ -270,7 +270,7 @@ Expected:
 OrbitXAI backend dependencies OK
 ```
 
-## 5️⃣ Start the FastAPI Backend
+## Start the FastAPI Backend
 
 From:
 
@@ -290,7 +290,7 @@ Expected:
 Uvicorn running on http://127.0.0.1:8000
 ```
 
-## 6️⃣ Verify the Backend
+## Verify the Backend
 
 Open:
 
@@ -336,7 +336,7 @@ http://localhost:8000/docs
 
 This opens the interactive Swagger UI.
 
-## 7️⃣ Run Frontend + Backend Together
+## Run Frontend + Backend Together
 
 OrbitXAI requires two running servers during development.
 
